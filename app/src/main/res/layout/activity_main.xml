@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".apicall.paint.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+
+    <ImageButton
+        android:id="@+id/redBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#FF0000"/>
+
+    <ImageButton
+        android:id="@+id/blueBtn"
+        android:layout_toEndOf="@+id/redBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/ofBlue"/>
+
+    <ImageButton
+        android:id="@+id/blackBtn"
+        android:layout_toEndOf="@+id/blueBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/eraser"
+        android:layout_toEndOf="@+id/blackBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#A5A5A5"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1">
+
+
+        <include layout="@layout/paint_view"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
